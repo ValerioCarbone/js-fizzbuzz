@@ -1,6 +1,6 @@
 // - Creare un programma che stampi in console i numeri da 1 a 100
 //     - Creare un ciclo for che stampi i numeri in console da 1 a  0
-let containerDOMElement = document.querySelector('.container')
+let containerDOMElement = document.querySelector('.container');
 
 for (let i = 0; i < 100; i++) {
     //  - Far in modo che il programma stampi per i multipli di 3 la stringa fizz
