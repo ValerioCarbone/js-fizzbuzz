@@ -41,6 +41,7 @@
     padding: 32px;
     aspect-ratio: 1;
     width: 50px;
+    font-size: 14px;
 }
 
 .fizzbuzz{
