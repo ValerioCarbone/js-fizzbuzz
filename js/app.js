@@ -21,22 +21,25 @@ for (let i = 0; i < 100; i++){
 
     const contentDOMElement = document.createElement('div') 
     containerDOMElement.append(contentDOMElement)   
-// containerDOMElement.classList.add('')
 
     if (p===0){
     console.log('FizzBuzz')
     contentDOMElement.innerHTML = ('FizzBuzz')
+    contentDOMElement.classList.add('fizzbuzz')
     }
     else if (n===0){
         console.log('Fizz')
         contentDOMElement.innerHTML = ('Fizz')
+        contentDOMElement.classList.add('fizz')
     }
     else if (o===0){
         console.log('Buzz')
         contentDOMElement.innerHTML = ('Buzz')
+        contentDOMElement.classList.add('buzz')
     }
     else {
         console.log(m)
         contentDOMElement.innerHTML = m
+        contentDOMElement.classList.add('number')
     }   
 }

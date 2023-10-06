@@ -1,0 +1,64 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* APP */
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.app-container{
+    background-color: rgb(222, 143, 68);
+    height: 100vh;
+}
+
+.section-title{
+    font-weight: 700;
+    color: rgb(46, 166, 231);
+    text-align: center;
+    font-size: 46px;
+    padding: 20px 0;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1400px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.fizzbuzz,
+.fizz,
+.buzz,
+.number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    aspect-ratio: 1;
+    width: 50px;
+}
+
+.fizzbuzz{
+    background-color: rgb(90, 194, 113);
+    color: white;
+}
+
+.fizz{
+    background-color: rgb(26, 12, 211);
+    color: white;
+}
+
+.buzz{
+    background-color: rgb(212, 35, 35);
+    color: white;
+}
+
+.number{
+    background-color: lightseagreen;
+    color: white;   
+}
