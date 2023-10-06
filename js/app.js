@@ -2,7 +2,7 @@
 //     - Creare un ciclo for che stampi i numeri in console da 1 a  0
 let containerDOMElement = document.querySelector('.container');
 
-for (let i = 0; i < 100; i++) {
+for (let i = 1; i <= 100; i++) {
     //  - Far in modo che il programma stampi per i multipli di 3 la stringa fizz
     //     - Inserire all'interno del ciclo una condizione per cui i numeri che nella modale di 3 danno come resto 0 stampino la parola fizz
 
@@ -19,29 +19,27 @@ for (let i = 0; i < 100; i++) {
 
     // - Dare uno stile ad ogni numero a seconda della divisibilità di m
 
-    let counter = i + 1
-
     const contentDOMElement = document.createElement('div')
     containerDOMElement.append(contentDOMElement)
 
-    if (((counter % 3) + (counter % 5)) === 0) {
+    if (((i % 3) + (i % 5)) === 0) {
         console.log('FizzBuzz')
         contentDOMElement.innerHTML = ('FizzBuzz')
         contentDOMElement.classList.add('fizzbuzz')
     }
-    else if ((counter % 3) === 0) {
+    else if ((i % 3) === 0) {
         console.log('Fizz')
         contentDOMElement.innerHTML = ('Fizz')
         contentDOMElement.classList.add('fizz')
     }
-    else if ((counter % 5) === 0) {
+    else if ((i % 5) === 0) {
         console.log('Buzz')
         contentDOMElement.innerHTML = ('Buzz')
         contentDOMElement.classList.add('buzz')
     }
     else {
-        console.log(counter)
-        contentDOMElement.innerHTML = counter
+        console.log(i)
+        contentDOMElement.innerHTML = i
         contentDOMElement.classList.add('number')
     }
 }
